@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de livro</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../public/style/css/cadastro_livro.CSS">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container-fluid">
+      <div class="navbar-brand mb-0 d-flex justify-content-center align-items-center">
+        <a href="home.html"><img src="../../public/Books_imgs/even_little_book.png" class="img-fluid"
+            alt="little_book" /></a>
+        <strong>
+          <h2 class="pt-1">BookSpace</h2>
+        </strong>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsite">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navdrop">
+                  Menu
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./livro_cadastro.html">Cadastrar</a>
+                  <a class="dropdown-item" href="./dados_usuario.html">Minha conta</a>
+                  <a class="dropdown-item" href="./busca_livros.html">Categorias</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="form-inline">
+          <input class="form-control ml-2 " type="search" placeholder="search...">
+          <button class="btn btn-warning" type="subtmit">search</button>
+          <a href="login.html" class="btn btn-primary ml-3" id="login">login</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="col-12 text center my-5">
+      <h1 class="text-center"> Cadastre o livro</h1>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-sm-12 col-md-10 col-lg-8">
+        <form action="/livros/create" method="POST">
+          <div class="form row">
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome" name="nome">
+            </div>
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputAuthor" placeholder="Autor" name="autor">
+            </div>
+          </div>
+          <div class="form row">
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputEditor" placeholder="Editora" name="editora">
+            </div>
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputGender" placeholder="Gênero" name="genero">
+            </div>
+          </div>
+          <div class="form row">
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputLang" placeholder="Idioma" name="idioma">
+            </div>
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputQuant" placeholder="Quantidade de páginas" name="quantidade_paginas">
+            </div>
+          </div>
+          <div class="form row">
+
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputEdition" placeholder="Edição" name="edicao">
+            </div>
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputYear" placeholder="Ano" name="ano">
+            </div>
+          </div>
+          <div class="form row">
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputDescription" placeholder="Descrição" name="descricao">
+            </div>
+            <div class="form-group col-sm-6">
+              <input type="text" class="form-control" id="inputValue" placeholder="Valor R$" name="valor">
+            </div>
+            <br> <br> <br> <br>
+          </div>
+          <div class="d-flex  justify-content-center">
+            <div class="w-25">
+              <button type="submit" class="btn btn-primary btn-center btn-block ">cadastrar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <br><br>
+    <footer class="row bg-info" id="footer"></footer>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../../public/scripts/Image_show.js"></script>
+</body>
+
+</html>
